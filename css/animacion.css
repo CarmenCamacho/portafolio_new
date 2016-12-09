@@ -1,0 +1,6 @@
+#1{
+  -webkit-animation-duration: 4s !important;
+  -moz-animation-duration: 4s !important;
+  animation-duration: 4s !important;
+  -webkit-animation-iteration-count: infinite;
+}

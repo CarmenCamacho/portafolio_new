@@ -1,0 +1,467 @@
+
+// .row{
+//   border:2px solid red;
+// }
+// .col{
+//   border: 2px dashed yellow;
+// }
+// .container{
+//   border:2px dashed blue;
+// }
+
+$color1: #cfcff6;   /* color lavanda */
+$color2: #b8f5c9;   /* color Menta */
+$color3: #fafeb8;   /* color canario */
+$color4: #310020;   /* color berenjena */
+$color5: #fff7e0;   /* color nata */
+$color6: #1ce8b5;   /* color aquaa? */
+$color7: #805573;   /* color lila viejo */  
+
+
+$slabfont:'Roboto Slab', serif;
+
+  
+ /*/////////  SECCION INICIO ///////////////////////////////*/
+
+#landing{ 
+  h2{
+    margin-top: .6em;
+    color:$color7;
+    text-shadow: -2px -3px 1px $color5;
+    }
+  h4{
+    margin-top: .4em;
+    color:$color3;
+    text-shadow: -2px -2px 0px $color2;
+   }
+ } 
+
+ .dropmenu{
+  display: none;
+}
+
+nav{
+  background-color: transparent;
+  ul{
+    li{
+      a{
+        color : $color4;
+      &:hover{
+        color : $color6;
+        background-color: $color5;
+      }
+      }
+    }
+  }
+}
+
+.logo{
+    top:5vH !important;
+    max-width:60vW;
+    max-height:60vH;
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; bottom: 5; right: 0;
+}
+
+  /*/////////  SECCION ABOUT ///////////////////////////////*/
+
+ #about{
+
+
+   h2{
+   color:$color7;
+    }
+   h2.vertical{    
+    color:$color5 !important;
+    text-shadow: -2px -3px 1px $color3;
+    margin-top: 10vH !important;
+    } 
+
+  th{
+    color:$color6;
+    text-align: right;
+  }
+  td, tr {
+    padding-top: 2%;
+    text-align: right;
+    }
+  }
+
+
+.tabla{
+  padding-right:100px !important;
+}
+
+span{
+  color: $color7 !important;
+}
+
+  .idioma{
+  color:$color6;
+}
+
+#yo{
+  z-index: 300;
+  position: absolute;
+  width: 14vW;
+  top:7vH;
+  left: 8vW;
+
+}
+
+#yoyoyo{
+  display: none;
+  position:absolute;
+  z-index: 100 !important;
+  border-radius: 100px 100px 100px 0px;
+  height: 7em;
+  width: 7em;
+  text-align: center;
+  padding:3%;
+  background-color: $color3;
+  left: 70% !important;
+  top:2vH !important;
+  h4{
+    color:$color1;
+  }
+}
+
+
+ /*/////////  SECCION PROYECTOS ///////////////////////////////*/
+
+#proyectos{
+  h2{
+    color:$color6;
+    text-shadow: -2px -3px 1px $color3;
+  }
+}
+
+.circulo{
+  opacity: 1;
+  width: 13em;
+  height: 100%;
+  border-radius: 50%;
+  border:4px solid $color3;
+  z-index: 100 !important;
+  position:relative;
+
+  &:hover{
+    border-radius: 0em;
+    border:4px solid $color2;
+  }
+}
+
+
+#p-uno, #p-dos, #p-tres, #p-cuatro, #p-cinco, #p-seis{
+  display: none;
+  position:absolute;
+  z-index: 100 !important;
+  border-radius: 100px 100px 0px 100px;
+  height: 10em;
+  width: 12em;
+  text-align: center;
+  padding:5%;
+  background-color: $color2;
+
+  right: 70% !important;
+  bottom:10vH !important;
+  h4{
+    color: $color7;
+  }
+  }
+  
+
+.modal{
+  min-width: 70vW;
+  background-color: #f9fbe7;
+  height: 90vH !important;
+}
+
+
+ /*/////////  SECCION CONTACTO ///////////////////////////////*/
+
+.contact{
+    margin-top: 10vH !important;
+  }
+
+
+#contacto{
+  h4{
+    display: inline-block;
+    color: $color7;
+    font-family: 'Roboto Slab', serif;
+  }
+  a{
+    opacity:0;
+    i{
+      font-size: 4em;
+      padding-top:0.6em;
+    }
+  }
+
+}
+
+.btn-large{
+  width: 8em !important;
+  height: 8em !important;
+  background-color: transparent;
+
+  &:hover{
+    background-color: $color2 !important;
+    i{
+      color: $color1;
+    }
+  }
+  i{
+      color: $color4;
+  }
+}
+ 
+ /*/////////  GENERALES ///////////////////////////////*/
+
+h1{
+  font-size: 2em !important;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h5{
+  margin-top:3.5em;
+}
+
+
+
+p{
+  color:$color4 !important;
+}
+
+.inline{
+  display: inline-block
+}
+
+
+.abs{
+  position: absolute;
+}
+
+.rel{
+  position: relative;
+}
+
+.h100{
+  height: 100vH !important;
+}
+
+.w100{
+  width: 100vW;
+}
+
+.h100p{
+  height: 100%;
+}
+
+.h60{
+  height: 60vH;
+}
+.h40{
+  height: 40vH
+}
+
+
+.clear{
+  clear: both;
+}
+
+.triangulo{
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 0
+  ;
+}
+
+.bold{
+  font-weight: bolder;
+}
+
+
+.titulo{
+  font-family: $slabfont;  
+}
+
+.crazy{
+    display: inline-block;
+    height: 2em !important;
+    background-color: transparent;
+    opacity: 0.6;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+  .letra{
+    font:{
+      size: 1.5em;
+      family: 'Roboto Slab', serif;
+      }
+    color: $color7;
+    display: inline-block;
+  }
+
+  .letra.side{
+    color:$color6;
+  }
+ /* ------CLASES DE MATERIALIZE PARA PUSHPIN----- */
+
+  // Class for when element is above threshold
+  .pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+  }
+
+
+
+
+@media (max-width: 420px) {
+  .h60{
+    height: 50vH !important;
+  }
+  .logo{
+  top:8vH!important;
+  max-width:70vW !important;
+  }
+
+  }
+
+@media (max-width: 720px) {
+    .tabla{
+      padding-right:50px !important;
+    }
+
+  }
+
+@media(max-width:593px){
+
+    nav{
+      background-color: transparent;
+      ul{
+      li{
+        display: block !important;
+        background-color:$color2;
+        width: 100vW;
+        height: 2em;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+
+        a{
+          display: block !important;
+          color : $color4;
+        &:hover{
+          color : $color6;
+          background-color: $color5;
+          }
+          }
+        }
+      }
+    } 
+}
+
+
+
+
+ /*/////////  BACKGROUNDS ///////////////////////////////*/
+
+@mixin bg-gradient($start-colour, $end-colour) {
+    background-color: $start-colour; /* For browsers that do not support gradients */
+    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
+    background-image: -webkit-linear-gradient(top, $start-colour, $end-colour); /* For Safari 5.1 to 6.0 */
+    background-image: -moz-linear-gradient(top, $start-colour, $end-colour); /* For Firefox 3.6 to 15 */
+    background-image: -ms-linear-gradient(top, $start-colour, $end-colour);
+    background-image: -o-linear-gradient(top, $start-colour, $end-colour); /* For Opera 11.1 to 12.0 */
+    background-image: linear-gradient(top, $start-colour, $end-colour); /* Standard syntax */
+    filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
+.gradUno {
+  @include bg-gradient($color5 60%, $color2);
+}
+
+.gradDos {
+  @include bg-gradient($color2, $color5)
+}
+
+.gradTres {
+  @include bg-gradient($color5, $color3)
+ 
+}
+
+.gradCuatro {
+   @include bg-gradient($color3, $color1)
+}
+.gradCinco{
+   @include bg-gradient($color1, $color5)
+}
+
+
+
+ /*/////////  PADDING-MARGIN ///////////////////////////////*/
+
+
+.pl0{
+  padding-left: 0px !important;
+}
+
+.pl5{
+  padding-left:5%!important;
+}
+
+.pdr10{
+  padding-right: 10% !important;
+}
+
+.mb5{
+  margin-bottom: 5% !important;
+}
+.pdm0{
+  padding: 0px !important;
+  margin:0px;
+}
+
+.mbpb0{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.pt2{
+  padding-top:2%;
+}
+.mb5{
+  margin-bottom: 5%;
+}
+.mb3{
+  margin-bottom: 3%;
+}
+
+.mt2{
+  margin-top: 2%;
+}
+.pt5{
+  margin-top: 10 !important;
+}
+
+.pdb0{
+  padding-bottom: 0px;
+  margin-bottom: 0px
+}
+
+
