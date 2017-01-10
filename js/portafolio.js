@@ -7,11 +7,15 @@ $(document).ready(function(){
 	});
 	$('.modal').modal();
 
+//------------------------> ANIMA HEPTAGONO AL CARGAR 
+
 	$("#heptagono").addClass("animated");
 	$("#heptagono").addClass("rotateIn");
 
 	// $("#heptagono").removeClass("animated");
 	// $("#heptagono").removeClass("rotateIn");
+
+//--------------------------> Añade colores a logo 
 
 	$(".logo").mouseover(function(){
 		
@@ -20,12 +24,17 @@ $(document).ready(function(){
 		$("#heptagono").addClass("rotateIn");
 	});
 
+// ----------------------------> HOLA 
+
 	$("#yo").mouseover(function(){
 		$("#yoyoyo").fadeIn()
 	});
 	$("#yo").mouseleave(function(){
 		$("#yoyoyo").fadeOut()
 	});
+
+
+// ----------------------------> Activa el modal 
 
 	$('.modal').modal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -65,6 +74,8 @@ $(document).ready(function(){
 		$('#modal6').modal('open');
 	});
 
+
+   // ----------------> Muestra on scroll los botones de contacto
 
   var contactos = [
     {selector: '#batshit', offset: 50, callback: function(el) {
@@ -112,12 +123,18 @@ $(document).ready(function(){
  // Materialize.scrollFire(contactos);
 
 
+
+// -----------------> Mantiene ratio apariencia den circulos proyecto
+
 $(window).on('resize', function(){
      var anchoCirculo = $(".alto").height(); 
      console.log(anchoCirculo);
  	$("#p-uno").css("width",anchoCirculo)
 });
 
+
+
+// -----------------> Estilos circulos proyectos
 
   $("#proy1").mouseover(function(){
   		$(this).addClass("z-depth-3")
@@ -171,12 +188,12 @@ $(window).on('resize', function(){
   		$("#p-seis").fadeOut();
   });
 
-
+// -----------------> Colores colores!
 
 $(".crazy").mouseover(function(){
-		var arregloColor = ["#ff897f", "#b8f5c9", "#1de9b6", "#310020", "#9b80ff", "#d0c9e5"];
-	        color = arregloColor[Math.floor(Math.random() * (6 - 0 + 0)) + 0];	    
-	    $(this).css("background-color", color)
+		var arregloColor = ["#ff897f", "#1de9b6", "#310020", "#9b80ff", "#d0c9e5"];
+	  color = arregloColor[Math.floor(Math.random() * (5 - 0 + 0)) + 0];	    
+	  $(this).css("background-color", color)
 		$(this).css("box-shadow", "none")
 		$(this).next(".letra").css("color",color)
 	});

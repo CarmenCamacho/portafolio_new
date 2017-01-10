@@ -9,6 +9,8 @@
 //   border:2px dashed blue;
 // }
 
+/*////PALETA DE COLORES */
+
 $color1: #cfcff6;   /* color lavanda */
 $color2: #b8f5c9;   /* color Menta */
 $color3: #fafeb8;   /* color canario */
@@ -92,7 +94,7 @@ nav{
 
 
 .tabla{
-  padding-right:100px !important;
+  padding-right:50px !important;
 }
 
 span{
@@ -141,7 +143,7 @@ span{
 
 .circulo{
   opacity: 1;
-  width: 13em;
+  width: 12em;
   height: 100%;
   border-radius: 50%;
   border:4px solid $color3;
@@ -342,13 +344,32 @@ p{
   top:8vH!important;
   max-width:70vW !important;
   }
-
+  .tabla{
+    padding-right:0px !important;
+  }
   }
 
 @media (max-width: 720px) {
     .tabla{
-      padding-right:50px !important;
+      padding-right:20px !important;
     }
+
+  #yoyoyo{
+  display: none;
+  position:absolute;
+  z-index: 100 !important;
+  border-radius: 100px 100px 100px 0px;
+  height: 7em;
+  width: 7em;
+  text-align: center;
+  padding:3%;
+  background-color: $color3;
+  left: 70% !important;
+  top:-3vH !important;
+  h4{
+    color:$color1;
+  }
+}
 
   }
 
